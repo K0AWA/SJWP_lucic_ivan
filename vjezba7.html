@@ -1,0 +1,57 @@
+<!-- HTML forme -->
+
+<form action="" method="get">
+    <label for="name">Ime:</label>
+    <input type="text" name="name" id="name" size="10" maxlength="5"> <br>
+    <label for="prezime">Prezime</label>
+    <input type="text" name="prezime" id="preizme" pattern="[A-Za-z]{3}"> <br>
+
+    <label>Izaberi najbolji programski jezik:</label><br>
+    <input type="radio" name="jezik" id="html" value="html">
+    <label for="html">HTML</label><br>
+    <input type="radio" name="jezik" id="c" value="c">
+    <label for="c">C</label><br>
+    <input type="radio" name="jezik" id="c#" value="c#" checked>
+    <label for="c#">C#</label><br>
+
+
+    <label>Danas od predmeta imamo:</label><br>
+    <input type="checkbox" name="hrv" id="hrv" value="hrv">
+    <label for="hrv">Hrvatski</label><br>
+    
+    <input type="checkbox" name="hrv" id="Mat" value="Mat">
+    <label for="Mat">Mat</label><br>
+    <input type="checkbox" name="hrv" id="fiz" value="fiz" checked>
+    <label for="fiz">Fiz</label><br>
+
+    <label>Izaberi boju:</label>
+    <input type="color"><br>
+
+    <label>Izaberi datum:</label>
+    <input type="date"><br>
+
+    <label for="pass">Unesi password:</label>
+    <input type="password" name="pass" id="pass"><br>
+
+    <label for="email">Unesi e-mail adresu:</label>
+    <input type="email" name="email" id="email" required><br>
+
+    <label>Unesi raspon:</label>
+    <input type="range"><br>
+
+    <label for="cars">Choose a car:</label>
+
+<select id="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="opel">Opel</option>
+  <option value="audi">Audi</option>
+</select><br>
+
+    <input type="submit"value="Pošalji">
+    <input type="reset" value="Poništi">
+
+
+
+
+</form>
