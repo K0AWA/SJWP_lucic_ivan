@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak</title>
+</head>
+<style>
+    .Veliki p{
+        margin-top: 100px;
+        position: absolute;
+        margin-left: 100px;
+    }
+
+    .Veliki{
+        width: 400px;
+        height: 400px;
+       background-color: bisque;
+        position: relative;
+        margin-top: 200px;
+        margin-left: 200px;
+    }
+
+    .prvi{
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        transform-origin: top left;
+        transition: 1s;
+        
+    }
+    .drugi{
+        background-color: yellow;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        margin-left: 100px;
+        transform-origin:top right ;
+        transition: 1s;
+    }
+
+    .treci{
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        margin-top: 100px;
+        transform-origin: bottom left;
+        transition: 1s;
+    }
+
+    .cetvrti{
+        background-color: green;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 100px;
+        transform-origin: bottom right;
+        transition: 1s;
+    }
+
+    div.Veliki:hover .prvi{
+        transform: rotate(90deg)
+    }
+
+    div.Veliki:hover .drugi{
+        transform: rotate(-90deg)
+    }
+
+    div.Veliki:hover .treci{
+        transform: rotate(-90deg)
+    }
+    div.Veliki:hover .cetvrti{
+        transform: rotate(90deg)
+    }
+
+</style>
+<body>
+
+    <div class="Veliki">
+        <p>Hi!</p>
+        <div class="prvi"></div>
+        <div class="drugi"></div>
+        <div class="treci"></div>
+        <div class="cetvrti"></div>
+    </div>
+
+</body>
+</html>
