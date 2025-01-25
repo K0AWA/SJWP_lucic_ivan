@@ -47,7 +47,7 @@ body{
 }
 
 .li2{
-    list-style-type: square;
+    list-style-type: lower-roman;
 }
 
 .li3{
