@@ -8,10 +8,11 @@
 <style>
 body{
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .glavno{
-    background-color: darkblue;
+    background-color: #0d3a5e;
     width: 100vw;
     height: 10vh;
     position: relative;
@@ -43,6 +44,80 @@ p{
     position: absolute;
 }
 
+.footer{
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    bottom: 10px;
+    left: 45%;
+}
+
+.Naslov{
+    position: absolute;
+    left: 45%;
+    top: 30%;
+}
+
+.ime{
+    position: absolute;
+    left: 41%;
+    width: 300px;
+    height: 25px;
+    top: 41%;
+
+}
+
+.prezime{
+    position: absolute;
+    left: 41%;
+    width: 300px;
+    height: 25px;
+    top: 48%;
+}
+
+.button{
+    position: absolute;
+    width: 310px;
+    height: 30px;
+    background-color: #0d3a5e;
+    left: 41%;
+    color: white;
+    top: 55%;
+}
+
+.button:hover{
+    background-color: blue;
+}
+
+.naziv{
+    position: absolute;
+    color: black;
+    font-size: 15px;
+    top: 40%;
+    left: 35%;
+
+}
+
+.pass{
+    position: absolute;
+    color: black;
+    font-size: 15px;
+    top: 47%;
+    left: 38%;
+
+}
+
+.slika{
+    position: absolute;
+    bottom: 0px;
+}
+a{
+    background-image: url(./ednevnikslike/ed.png);
+    position: absolute;
+    bottom: 0px;
+    height: 40px;
+    width: 2000px;
+}
 </style>
 <body>
     
@@ -52,5 +127,20 @@ p{
     <div class="linija"></div>
 </div>
 
+<img src="./ednevnikslike/cnlogo.svg" alt="logo" class="footer">
+<h1 class="Naslov">Dobro došli!</h1>
+
+<label for="ime"></label>
+<input type="text" class="ime">
+
+<label for="prezime"></label>
+<input type="text" class="prezime">
+
+<button class="button">PRIJAVA</button>
+
+<p class="naziv">Korisničko ime</p>
+<p class="pass">Lozinka</p>
+
+<a href="https://e-dnevnik.skole.hr/"></a>
 </body>
 </html>
