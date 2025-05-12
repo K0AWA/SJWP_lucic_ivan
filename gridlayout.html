@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Prvi</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+            width: 100%;
+            max-width: 600px;
+            height: 300px;
+            padding: 10px;
+            outline: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .item {
+            background-color: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding:px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        #itemA {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        #itemB {
+            grid-column: 2;
+            grid-row: 1 / span 2;
+        }
+
+        #itemC {
+            grid-column: 1 / span 1;
+            grid-row: 2;
+            width: calc(50% - 5px);
+        }
+
+        #itemD {
+            grid-column: 1;
+            grid-row: 2;
+            margin-left: calc(50% + 5px);
+            width: calc(50% - 5px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="itemA" class="item">A</div>
+        <div id="itemB" class="item">B</div>
+        <div id="itemC" class="item">C</div>
+        <div id="itemD" class="item">D</div>
+    </div>
+</body>
+</html>
