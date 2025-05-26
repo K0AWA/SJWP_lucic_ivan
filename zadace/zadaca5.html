@@ -1,45 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>5 zadaća</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ivan Lučić">
+  <title>JoJo Fan Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f8f8;
+    }
 
-    <style>
-        body{
-            background-color: #E7DFD9;
-            margin: 0;
-        }
+    header {
+      background: linear-gradient(to right, pink, plum);
+      padding: 20px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
 
-        
-        .Glupiheder{
-            height: 200px;
-            width: 100%;
-            background-color: brown;
-           
-        }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
 
-        .mid{
-            height: 700px;
-            width: 100%;
-            background-color: yellow;
-        }
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
 
-        .fter{
-            height: 300px;
-            width: 100%;
-            background-color: red;
-        }
-    </style>
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
 
+    main {
+      padding: 20px;
+    }
+
+    .flex-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    
+
+
+    .flex-item {
+      background-color: white;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      max-width: 220px;
+      text-align: center;
+    }
+
+    .flex-item img {
+        width: 180px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s;
+    }
+
+    .flex-item img:hover {
+      transform: scale(1.05);
+    }
+
+    .info-box {
+      background-color: #fff0f5;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .contact-form {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .contact-form button {
+      padding: 10px 20px;
+      background-color: pink;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #1e1e1e;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
-
-
 <body>
-    
-    <div class="Glupiheder"></div>
-    <div class="mid"></div>
-    <div class="fter"></div>
-    
+  <header>
+    <h1>JoJo's Bizarre Adventure</h1>
+    <nav>
+      <ul>
+        <li><a href="https://jojowiki.com/Category:Characters" target="_blank">Likovi</a></li>
+        <li><a href="https://jojo.fandom.com/wiki/JoJo%27s_Bizarre_Adventure" target="_blank">Priča</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>O seriji</h2>
+      <p>
+        JoJo's Bizarre Adventure je popularna manga i anime serija koja prati generacije obitelji Joestar kroz borbu protiv nadnaravnih prijetnji.
+        Svaka nova sezona donosi novog junaka, novi stil i nevjerojatne borbe uz pomoć "Standova" – duhovnih manifestacija moći.
+      </p>
+    </section>
+
+    <section class="flex-container">
+      <div class="flex-item">
+        <h3>Dio Brando</h3>
+        <img src="./slike/dio.jpg" alt="Dio Brando">
+        <p>Glavni negativac u prvim dijelovima serijala. Vampir koji se bori protiv Joestara koristeći svoj opasni Stand: The World.</p>
+      </div>
+      <div class="flex-item">
+        <h3>Jotaro Kujo</h3>
+        <img src="./slike/JotaroProfile.webp" alt="Jotaro Kujo">
+        <p>Najpoznatiji JoJon. Njegov Stand, Star Platinum, poznat je po nevjerojatnoj brzini i snazi i velikoj preciznosti.</p>
+      </div>
+      <div class="flex-item">
+        <h3>Speedwagon</h3>
+        <img src="./slike/Speedwagon.webp" alt="Speedwagon">
+        <p>Od uličnog borca do saveznika Joestara, postaje osnivač zaklade koja podržava borbu protiv zla i bitna je kroz cijelu priču</p>
+      </div>
+    </section>
+
+    <section class="info-box">
+      <h3>Fun Fact</h3>
+      <p>Seriju je stvorio Hirohiko Araki 1987. godine i još uvijek traje! Svaki dio ima potpuno novi stil i atmosferu.</p>
+    </section>
+
+    <section class="contact-form">
+      <h3>Kontaktiraj nas</h3>
+      <form>
+        <label for="name">Ime:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="message">Poruka:</label><br>
+        <textarea id="message" name="message" rows="4"></textarea><br>
+        <button type="submit">Pošalji</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 JoJo Fan Page | Izradio: Ivan Lučić</p>
+    <p>Kontakt: jojofanpage@email.com</p>
+  </footer>
 </body>
 </html>
